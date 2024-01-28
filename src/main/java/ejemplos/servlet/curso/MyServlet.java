@@ -1,6 +1,5 @@
 package ejemplos.servlet.curso;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +20,7 @@ public class MyServlet extends HttpServlet {
         // send HTML page to client
         out.println("<html>");
         out.println("<head><title>Ejemplo HTML desde Servlet</title></head>");
+        out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"/resources/css/estilos.css\">");
         out.println("<body>");
         out.println("<h1>Ejemplo Servlet</h1>");
         out.println("<p>Este es un ejemplo en el curso de Java para generar HTML desde un Servlet.</p>");
